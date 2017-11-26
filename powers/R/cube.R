@@ -24,4 +24,4 @@
 #' @export
 
 
-cube <- function(x) x^3
+cube <- function(x) pow(x, a=3)
