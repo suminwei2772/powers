@@ -4,34 +4,30 @@
 \alias{logarithm}
 \title{Take the logarithm of a vector}
 \usage{
-logarithm(x, base = 10)
+logarithm(x, base = 10, plot_it = TRUE)
 }
 \arguments{
 \item{x}{The vector to be logged}
 
 \item{base}{The base of the log}
+
+\item{plot_it}{a logical indicating whether to generate a plot showing x on the x-axis and x log-transformed on the y-axis.}
 }
 \value{
 A vector that is the log of \code{x}.
 
 The base of the log to be applied to \code{x}
+
+if TRUE then a plot is generated; if FALSE, no plot is generated.
 }
 \description{
-That's it -- this function just logs a vector.
+This function takes a log of a vector. The base of the logarithm is specified by the user.
 }
 \details{
-This function isn't complicated.
-
-And it almost certainly doesn't need two paragraphs in the "Details"
-section!
-
-Here are some reasons why putting a list in this section is excessive:
-\itemize{
-     \item This \code{lologarithm} function is quite simple.
-     \item There's nothing else to say about \code{logarithm}.
-}
+This function requires that \code{base} be greater than or equal to 0.
+The \code{lologarithm} function is essentially a wrapper around the \code{log} function in base R.
 }
 \examples{
-logarithm(1:10)
-logarithm(-5)
+logarithm(1:10, base=2, plot_it=FALSE)
+logarithm(-5, base=exp(1), plot_it=TRUE)
 }

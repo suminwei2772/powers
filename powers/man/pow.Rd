@@ -2,7 +2,7 @@
 % Please edit documentation in R/square.R
 \name{pow}
 \alias{pow}
-\title{general function to compute any power for a vector}
+\title{Raise a vector to a power.}
 \usage{
 pow(x, a = 2, plot_it = TRUE)
 }
@@ -10,22 +10,25 @@ pow(x, a = 2, plot_it = TRUE)
 \item{x}{The vector to be operated on.}
 
 \item{a}{The power}
+
+\item{plot_it}{a logical indicating whether to generate a plot showing x on the x-axis and x raised to the power `a` on the y-axis.}
 }
 \value{
 A vector that is raised to the power of \code{x}.
 
 The power to apply to the vector
+
+if TRUE then outputs a plot; if FALSE, then no plot is generated.
 }
 \description{
-general function to compute any power for a vector
+General function to compute any power for a vector
 }
 \details{
-This function isn't complicated.
+The output of this function also includes a plot showing the vector along the x-axis, and the output number after the vectors have been operated on by \code{pow}.
 
-Here are some reasons why putting a list in this section is excessive:
+Important class type of inputs:
 \itemize{
-     \item This \code{pow} function is quite simple.
-     \item There's nothing else to say about \code{pow}.
+     \item \code{x} and \code{y} must be numeric, otherwise would cause an error in the output.
 }
 }
 \examples{

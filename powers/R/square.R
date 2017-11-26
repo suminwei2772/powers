@@ -1,22 +1,13 @@
 #' Square a vector
 #'
-#' That's it -- this function just squares a vector.
+#' This function squares each element of a vector.
 #'
 #' @param x The vector to be squared.
 #'
 #' @return A vector that is the square of \code{x}.
 #'
 #' @details
-#' This function isn't complicated.
-#'
-#' And it almost certainly doesn't need two paragraphs in the "Details"
-#' section!
-#'
-#' Here are some reasons why putting a list in this section is excessive:
-#' \itemize{
-#'      \item This \code{square} function is quite simple.
-#'      \item There's nothing else to say about \code{square}.
-#' }
+#' This function is built upon the \code{pow} function, with the \code{a} set as 2.
 #'
 #' @examples
 #' square(1:10)
@@ -30,7 +21,9 @@ square <- function(x) pow(x,a=2)
 
 
 
-#' general function to compute any power for a vector
+#' Raise a vector to a power.
+#'
+#' General function to compute any power for a vector
 #'
 #' @param x The vector to be operated on.
 #'
@@ -40,13 +33,16 @@ square <- function(x) pow(x,a=2)
 #'
 #' @return The power to apply to the vector
 #'
-#' @details
-#' This function isn't complicated.
+#' @param plot_it a logical indicating whether to generate a plot showing x on the x-axis and x raised to the power `a` on the y-axis.
 #'
-#' Here are some reasons why putting a list in this section is excessive:
+#' @return if TRUE then outputs a plot; if FALSE, then no plot is generated.
+#'
+#' @details
+#' The output of this function also includes a plot showing the vector along the x-axis, and the output number after the vectors have been operated on by \code{pow}.
+#'
+#' Important class type of inputs:
 #' \itemize{
-#'      \item This \code{pow} function is quite simple.
-#'      \item There's nothing else to say about \code{pow}.
+#'      \item \code{x} and \code{y} must be numeric, otherwise would cause an error in the output.
 #' }
 #'
 #' @examples

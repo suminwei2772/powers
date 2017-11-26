@@ -24,8 +24,11 @@ See the vignette for more extensive use, but here's an example:
 
 ``` r
 powers::pow(2)
-#> [1] 4
 ```
+
+![](README-example-1.png)
+
+    #> [1] 4
 
 For Developers
 --------------

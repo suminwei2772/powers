@@ -24,7 +24,7 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+devtools::install_github("suminwei2772/powers_package/tree/master/powers")
 ```
 
 ## Example

@@ -2,30 +2,21 @@
 % Please edit documentation in R/cube.R
 \name{cube}
 \alias{cube}
-\title{Square a vector}
+\title{Cube of a vector}
 \usage{
 cube(x)
 }
 \arguments{
-\item{x}{The vector to be cubed}
+\item{x}{The number or vector to be cubed}
 }
 \value{
-A vector that is the cubed of \code{x}.
+A vector that is the cube of \code{x}.
 }
 \description{
-That's it -- this function just cubes a vector.
+This function takes the cube if a number or each element of a vector.
 }
 \details{
-This function isn't complicated.
-
-And it almost certainly doesn't need two paragraphs in the "Details"
-section!
-
-Here are some reasons why putting a list in this section is excessive:
-\itemize{
-     \item This \code{cube} function is quite simple.
-     \item There's nothing else to say about \code{cube}.
-}
+This function is built upon the \code{pow} function, with the \code{a} set as 3.
 }
 \examples{
 cube(1:10)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/trig_operations.R
 \name{polar_transform}
 \alias{polar_transform}
-\title{Transform cartesian coordinates into polar coordinates}
+\title{Transform Cartesian coordinates into polar coordinates}
 \usage{
 polar_transform(x, y)
 }
@@ -12,21 +12,21 @@ polar_transform(x, y)
 \item{y}{A number or vector}
 }
 \value{
-polar coordinates
+a list with (1) the first element containing the radii and (2) the second element containing the angles.
 }
 \description{
-Transform cartesian coordinates into polar coordinates
+Transform Cartesian coordinates into polar coordinates
 }
 \details{
-This function isn't complicated.
+This function transforms Cartesian coordinates into polar coordinates, as specified by \code{r} and \code{theta}.
 
-And it almost certainly doesn't need two paragraphs in the "Details"
-section!
+\code{r} is the radius.
+\code{theta} is the angle from the x=axis.
 
-Here are some reasons why putting a list in this section is excessive:
+Definition of transformation from Cartesian to polar coodinates:
 \itemize{
-     \item This \code{polar_transform} function is quite simple.
-     \item There's nothing else to say about \code{polar_transform}.
+     \item \code{r = sqrt(x^2 + y^2)}.
+     \item \code{theta = arctan(y/x)}.
 }
 }
 \examples{

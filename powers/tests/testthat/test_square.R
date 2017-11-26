@@ -15,9 +15,21 @@ test_that("Logicals automatically convert to numeric.", {
 
 ## Step 2: Test logarithm function
 test_that("Log of 0 is -Inf.", {
-  expect_identical(logarithm(numeric(0)), "-Inf")
+  logarithm(as.numeric(0)) == "-Inf"
+})
+
+test_that("log does not work on negative numbers.", {
+  logarithm(-5)
 })
 
 
+## Step 3: Test polar_transform function
+test_that("cannot oprate on 0 vectors.", {
+  polar_transform(0,0)
+})
 
 
+test_that("Logicals automatically convert to numeric.", {
+    logic_vec <- c(TRUE, TRUE, FALSE)
+    polar_transform(logic_vec, logic_vec)
+})
