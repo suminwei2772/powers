@@ -54,10 +54,10 @@ square <- function(x) pow(x,a=2)
 #' pow(-5)
 #' @export
 #'
-pow <- function(x, a=2) x^a
-
-x <- 2; a <- 2
-res <- x^a
-p <- ggplot2::qplot(x, res)
-print(p)
-return(res)
+pow <- function(x, a, plot_it=TRUE) {
+  if (is.numeric(x) ==FALSE) stop("'x' must be of type numeric")
+  if (is.numeric(a) == FALSE) stop("'a' must be of type numeric")
+	res <- x^a
+	if (plot_it) print(ggplot2::qplot(x, res))
+	return(res)
+}

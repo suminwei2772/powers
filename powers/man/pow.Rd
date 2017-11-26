@@ -4,7 +4,7 @@
 \alias{pow}
 \title{general function to compute any power for a vector}
 \usage{
-pow(x, a = 2)
+pow(x, a, plot_it = TRUE)
 }
 \arguments{
 \item{x}{The vector to be operated on.}
