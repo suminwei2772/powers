@@ -67,11 +67,11 @@ logarithm(5, base=exp(1))
 
 ## Using `polar_transform()`
 
-This function transforms a vector in Cartesian coordinates into polar coordinates, as specified by `r` and `theta`.
+This function transforms Cartesian coordinates into polar coordinates, as specified by `r` and `theta`. Output is a list.
   
-  * `r` is the radius.
-  * `theta` is the angle between the `(x,y)` and the x-axis.
-
+  * `r` is the radius, given in the first element of the list output.
+  * `theta` is the angle between the `(x, y)` and the x-axis, as provided in the second list of the output.
+  
 ```{r}
 polar_transform(1:10, 2:11)
 polar_transform(5, 1)
