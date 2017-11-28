@@ -29,6 +29,7 @@ polar_transform <- function(x, y){
   r <- sqrt(x^2 + y^2)
   theta <- atan(y/x)
   polar_coord <- list(c(r),c(theta))
+  names(polar_coord) <- c("radius","theta")
   return(polar_coord)
 }
 

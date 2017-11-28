@@ -12,7 +12,7 @@
 
 <meta name="author" content="Lisa Wei" />
 
-<meta name="date" content="2017-11-26" />
+<meta name="date" content="2017-11-27" />
 
 <title>Using the powers package</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Using the <code>powers</code> package</h1>
 <h4 class="author"><em>Lisa Wei</em></h4>
-<h4 class="date"><em>2017-11-26</em></h4>
+<h4 class="date"><em>2017-11-27</em></h4>
 
 
 <div id="TOC">
@@ -165,18 +165,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><code>theta</code> is the angle between the <code>(x, y)</code> and the x-axis, as provided in the second list of the output.</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">polar_transform</span>(<span class="dv">1</span>:<span class="dv">10</span>, <span class="dv">2</span>:<span class="dv">11</span>)</code></pre></div>
-<pre><code>## [[1]]
+<pre><code>## $radius
 ##  [1]  2.236068  3.605551  5.000000  6.403124  7.810250  9.219544 10.630146
 ##  [8] 12.041595 13.453624 14.866069
 ## 
-## [[2]]
+## $theta
 ##  [1] 1.1071487 0.9827937 0.9272952 0.8960554 0.8760581 0.8621701 0.8519663
 ##  [8] 0.8441540 0.8379812 0.8329813</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">polar_transform</span>(<span class="dv">5</span>, <span class="dv">1</span>)</code></pre></div>
-<pre><code>## [[1]]
+<pre><code>## $radius
 ## [1] 5.09902
 ## 
-## [[2]]
+## $theta
 ## [1] 0.1973956</code></pre>
 </div>
 
