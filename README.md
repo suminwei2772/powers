@@ -103,3 +103,5 @@ polar_transform(5, 1)
 #> $theta
 #> [1] 0.1973956
 ```
+
+For more in-depth tutorials, please refer to the [Vignette for using the powers package](https://htmlpreview.github.io/?https://github.com/suminwei2772/powers/blob/master/inst/doc/my_vignette.html)

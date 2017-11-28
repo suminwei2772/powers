@@ -1,9 +1,10 @@
 ---
 title: "Using the `powers` package"
 author: "Lisa Wei"
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
 output:
   github_document:
+    toc: true
   rmarkdown::html_vignette:
 vignette: >
   %\VignetteIndexEntry{Using the `powers` package}
