@@ -3,9 +3,8 @@ title: "Using the `powers` package"
 author: "Lisa Wei"
 date: "`r Sys.Date()`"
 output:
+  github_document:
   rmarkdown::html_vignette:
-    toc: yes
-    keep_md: yes
 vignette: >
   %\VignetteIndexEntry{Using the `powers` package}
   %\VignetteEngine{knitr::rmarkdown}
