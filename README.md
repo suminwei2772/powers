@@ -23,7 +23,7 @@ Installation
 You can install powers from github with:
 
 ``` r
-devtools::install_github("suminwei2772/powers_package/tree/master/powers")
+devtools::install_github("suminwei2772/powers")
 ```
 
 First let us load the package:
