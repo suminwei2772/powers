@@ -16,3 +16,5 @@ Suggests: testthat,
 VignetteBuilder: knitr
 Imports: ggplot2,
     ArgumentCheck
+VignetteBuilder: knitr
+Depends: R(>= 2.10.0)
