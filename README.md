@@ -1,7 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-`powers` package overview
-=========================
+### The `powers` package overview
+
+#### For more in-depth tutorials, please refer to the [Vignette for using the powers package](https://htmlpreview.github.io/?https://github.com/suminwei2772/powers/blob/master/inst/doc/my_vignette.html)
 
 This package contains functions that carry out power operations, log transformations, and conversion between Cartesian coordinates and polar coordinates.
 
@@ -103,5 +104,3 @@ polar_transform(5, 1)
 #> $theta
 #> [1] 0.1973956
 ```
-
-For more in-depth tutorials, please refer to the [Vignette for using the powers package](https://htmlpreview.github.io/?https://github.com/suminwei2772/powers/blob/master/inst/doc/my_vignette.html)
